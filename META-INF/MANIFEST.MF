@@ -1,0 +1,70 @@
+Manifest-Version: 1.0
+Built-By: 0.11.2
+Created-By: Android Gradle 0.11.2
+
+Name: AndroidManifest.xml
+SHA1-Digest: 7DhBDtUESR53Jd8zRiMpt6hcQ4g=
+
+Name: res/layout/main.xml
+SHA1-Digest: nudCzR5T/A3CarznZbyQJKtKY0o=
+
+Name: lib/armeabi-v7a/libSDL2.so
+SHA1-Digest: p7eF6+hhAzyr6djbovSZhaGeuwI=
+
+Name: res/drawable-hdpi-v4/ic_launcher.png
+SHA1-Digest: TI/1qyoma8wMOWpj9VUP4Yy0DIo=
+
+Name: lib/mips/libSDL2.so
+SHA1-Digest: f6o6AiFdgl4napXyuqYXD+ZRaz4=
+
+Name: lib/armeabi/libmain.so
+SHA1-Digest: emMnB6y2yMVq3cexNP9h59A+L/s=
+
+Name: res/drawable-mdpi-v4/ic_launcher.png
+SHA1-Digest: 6k/R4N4dl+2lHpJOJCWef7jxlY0=
+
+Name: lib/mips64/libSDL2.so
+SHA1-Digest: EFDcvXuBTWwCj+Pu4W/ssG9s/kc=
+
+Name: lib/x86_64/libmain.so
+SHA1-Digest: LEhow9SzzDUFZPWmYMDQ2zxHK60=
+
+Name: lib/arm64-v8a/libmain.so
+SHA1-Digest: UUINjm6g04pFPfhvmJzYTJLuEd0=
+
+Name: res/drawable-xhdpi-v4/ic_launcher.png
+SHA1-Digest: 8CfQznt/eRM+V59eR5e4+6PtHiw=
+
+Name: lib/x86/libSDL2.so
+SHA1-Digest: IehbH7JsMZVVCXfSuPjwU79JWM8=
+
+Name: lib/armeabi/libSDL2.so
+SHA1-Digest: f3x/53PDz5n3Wd2BS3fdC2V/TcY=
+
+Name: lib/armeabi-v7a/libmain.so
+SHA1-Digest: eUHjJV/t/T7TLC1RRT45rGJSSVE=
+
+Name: lib/arm64-v8a/libSDL2.so
+SHA1-Digest: q/7rGIQeBEER89EQQiwO4uxG7F4=
+
+Name: lib/x86_64/libSDL2.so
+SHA1-Digest: QJJlTkhzxoWxcV/H62LVsnbIVzA=
+
+Name: resources.arsc
+SHA1-Digest: m/P8aK5vKaEnRSB5nys32NyJ78c=
+
+Name: lib/mips64/libmain.so
+SHA1-Digest: zbDTq/5ccGwaj+mzOm4gBPR1pXk=
+
+Name: lib/x86/libmain.so
+SHA1-Digest: cGwfdxDwl3ubgPmh6YcHyCOtWyE=
+
+Name: classes.dex
+SHA1-Digest: F+oRIx87+zdpelIHADhCDFUg01Y=
+
+Name: lib/mips/libmain.so
+SHA1-Digest: 8L2qycYTTU7TJnN0swiQ3J1HtV8=
+
+Name: res/drawable-ldpi-v4/ic_launcher.png
+SHA1-Digest: sC6NScxZZMtc5e67P5pRpUVHZtw=
+

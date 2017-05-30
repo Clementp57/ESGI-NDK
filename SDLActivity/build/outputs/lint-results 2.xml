@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="4" by="lint 25.2.5">
+
+    <issue
+        id="AllowBackup"
+        severity="Warning"
+        message="Should explicitly set android:allowBackup to true or false (it&apos;s true by default, and that can have some security implications for the application&apos;s data)"
+        category="Security"
+        priority="3"
+        summary="Ensure that allowBackup is explicitly set in the application&apos;s manifest"
+        explanation="The allowBackup attribute determines if an application&apos;s data can be backed up and restored. It is documented at http://developer.android.com/reference/android/R.attr.html#allowBackup
+
+By default, this flag is set to `true`. When this flag is set to `true`, application data can be backed up and restored by the user using `adb backup` and `adb restore`.
+
+This may have security consequences for an application. `adb backup` allows users who have enabled USB debugging to copy application data off of the device. Once backed up, all application data can be read by the user. `adb restore` allows creation of application data from a source specified by the user. Following a restore, applications should not assume that the data, file permissions, and directory permissions were created by the application itself.
+
+Setting `allowBackup=&quot;false&quot;` opts an application out of both backup and restore.
+
+To fix this warning, decide whether your application should support backup, and explicitly set `android:allowBackup=(true|false)&quot;`"
+        url="http://developer.android.com/reference/android/R.attr.html#allowBackup"
+        urls="http://developer.android.com/reference/android/R.attr.html#allowBackup"
+        errorLine1="    &lt;application android:label=&quot;@string/app_name&quot; android:icon=&quot;@drawable/ic_launcher&quot;>"
+        errorLine2="    ^"
+        quickfix="adt">
+        <location
+            file="/bitrise/src/SDLActivity/src/main/AndroidManifest.xml"
+            line="6"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        severity="Warning"
+        message="The resource R.layout.main appears to be unused"
+        category="Performance"
+        priority="3"
+        summary="Looks for unused resources"
+        explanation="Unused resources make applications larger and slow down builds.">
+        <location
+            file="/bitrise/src/SDLActivity/src/main/res/layout/main.xml"/>
+    </issue>
+
+    <issue
+        id="ClickableViewAccessibility"
+        severity="Warning"
+        message="org/libsdl/app/SDLSurface#onTouch should call View#performClick when a click is detected"
+        category="Accessibility"
+        priority="6"
+        summary="Checks that custom views handle accessibility on click events"
+        explanation="If a `View` that overrides `onTouchEvent` or uses an `OnTouchListener` does not also implement `performClick` and call it when clicks are detected, the `View` may not handle accessibility actions properly. Logic handling the click actions should ideally be placed in `View#performClick` as some accessibility services invoke `performClick` when a click action should occur."
+        errorLine1="    public boolean onTouch(View v, MotionEvent event) {"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="/bitrise/src/SDLActivity/src/main/java/org/libsdl/app/SDLActivity.java"
+            line="1328"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="HardcodedText"
+        severity="Warning"
+        message="[I18N] Hardcoded string &quot;Hello World, SDLActivity&quot;, should use @string resource"
+        category="Internationalization"
+        priority="5"
+        summary="Looks for hardcoded text attributes which should be converted to resource lookup"
+        explanation="Hardcoding text attributes directly in layout files is bad for several reasons:
+
+* When creating configuration variations (for example for landscape or portrait)you have to repeat the actual text (and keep it up to date when making changes)
+
+* The application cannot be translated to other languages by just adding new translations for existing string resources.
+
+In Android Studio and Eclipse there are quickfixes to automatically extract this hardcoded string into a resource lookup."
+        errorLine1="    android:text=&quot;Hello World, SDLActivity&quot;"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        quickfix="adt">
+        <location
+            file="/bitrise/src/SDLActivity/src/main/res/layout/main.xml"
+            line="10"
+            column="5"/>
+    </issue>
+
+</issues>
