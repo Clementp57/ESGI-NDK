@@ -1,134 +1,111 @@
-/bitrise/src/SDLActivity/obj/local/mips64/objs/main/__/main.o: \
- /bitrise/src/SDLActivity/jni/SDL/../main.c \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_main.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_stdinc.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_config.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_platform.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/begin_code.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/close_code.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_config_android.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_assert.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_atomic.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_audio.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_error.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_endian.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_mutex.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_thread.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_rwops.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_clipboard.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_cpuinfo.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_events.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_video.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_pixels.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_rect.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_surface.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_blendmode.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_keyboard.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_keycode.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_scancode.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_mouse.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_joystick.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_gamecontroller.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_quit.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_gesture.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_touch.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_filesystem.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_haptic.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_hints.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_loadso.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_log.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_messagebox.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_power.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_render.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_system.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_timer.h \
- /bitrise/src/SDLActivity/jni/./SDL/include/SDL_version.h
+obj/local/mips64/objs/main/__/main.o: jni/SDL/../main.c \
+ jni/./SDL/include/SDL.h jni/./SDL/include/SDL_main.h \
+ jni/./SDL/include/SDL_stdinc.h jni/./SDL/include/SDL_config.h \
+ jni/./SDL/include/SDL_platform.h jni/./SDL/include/begin_code.h \
+ jni/./SDL/include/close_code.h jni/./SDL/include/SDL_config_android.h \
+ jni/./SDL/include/SDL_assert.h jni/./SDL/include/SDL_atomic.h \
+ jni/./SDL/include/SDL_audio.h jni/./SDL/include/SDL_error.h \
+ jni/./SDL/include/SDL_endian.h jni/./SDL/include/SDL_mutex.h \
+ jni/./SDL/include/SDL_thread.h jni/./SDL/include/SDL_rwops.h \
+ jni/./SDL/include/SDL_clipboard.h jni/./SDL/include/SDL_cpuinfo.h \
+ jni/./SDL/include/SDL_events.h jni/./SDL/include/SDL_video.h \
+ jni/./SDL/include/SDL_pixels.h jni/./SDL/include/SDL_rect.h \
+ jni/./SDL/include/SDL_surface.h jni/./SDL/include/SDL_blendmode.h \
+ jni/./SDL/include/SDL_keyboard.h jni/./SDL/include/SDL_keycode.h \
+ jni/./SDL/include/SDL_scancode.h jni/./SDL/include/SDL_mouse.h \
+ jni/./SDL/include/SDL_joystick.h jni/./SDL/include/SDL_gamecontroller.h \
+ jni/./SDL/include/SDL_quit.h jni/./SDL/include/SDL_gesture.h \
+ jni/./SDL/include/SDL_touch.h jni/./SDL/include/SDL_filesystem.h \
+ jni/./SDL/include/SDL_haptic.h jni/./SDL/include/SDL_hints.h \
+ jni/./SDL/include/SDL_loadso.h jni/./SDL/include/SDL_log.h \
+ jni/./SDL/include/SDL_messagebox.h jni/./SDL/include/SDL_power.h \
+ jni/./SDL/include/SDL_render.h jni/./SDL/include/SDL_system.h \
+ jni/./SDL/include/SDL_timer.h jni/./SDL/include/SDL_version.h
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL.h:
+jni/./SDL/include/SDL.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_main.h:
+jni/./SDL/include/SDL_main.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_stdinc.h:
+jni/./SDL/include/SDL_stdinc.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_config.h:
+jni/./SDL/include/SDL_config.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_platform.h:
+jni/./SDL/include/SDL_platform.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/begin_code.h:
+jni/./SDL/include/begin_code.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/close_code.h:
+jni/./SDL/include/close_code.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_config_android.h:
+jni/./SDL/include/SDL_config_android.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_assert.h:
+jni/./SDL/include/SDL_assert.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_atomic.h:
+jni/./SDL/include/SDL_atomic.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_audio.h:
+jni/./SDL/include/SDL_audio.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_error.h:
+jni/./SDL/include/SDL_error.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_endian.h:
+jni/./SDL/include/SDL_endian.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_mutex.h:
+jni/./SDL/include/SDL_mutex.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_thread.h:
+jni/./SDL/include/SDL_thread.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_rwops.h:
+jni/./SDL/include/SDL_rwops.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_clipboard.h:
+jni/./SDL/include/SDL_clipboard.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_cpuinfo.h:
+jni/./SDL/include/SDL_cpuinfo.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_events.h:
+jni/./SDL/include/SDL_events.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_video.h:
+jni/./SDL/include/SDL_video.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_pixels.h:
+jni/./SDL/include/SDL_pixels.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_rect.h:
+jni/./SDL/include/SDL_rect.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_surface.h:
+jni/./SDL/include/SDL_surface.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_blendmode.h:
+jni/./SDL/include/SDL_blendmode.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_keyboard.h:
+jni/./SDL/include/SDL_keyboard.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_keycode.h:
+jni/./SDL/include/SDL_keycode.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_scancode.h:
+jni/./SDL/include/SDL_scancode.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_mouse.h:
+jni/./SDL/include/SDL_mouse.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_joystick.h:
+jni/./SDL/include/SDL_joystick.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_gamecontroller.h:
+jni/./SDL/include/SDL_gamecontroller.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_quit.h:
+jni/./SDL/include/SDL_quit.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_gesture.h:
+jni/./SDL/include/SDL_gesture.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_touch.h:
+jni/./SDL/include/SDL_touch.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_filesystem.h:
+jni/./SDL/include/SDL_filesystem.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_haptic.h:
+jni/./SDL/include/SDL_haptic.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_hints.h:
+jni/./SDL/include/SDL_hints.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_loadso.h:
+jni/./SDL/include/SDL_loadso.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_log.h:
+jni/./SDL/include/SDL_log.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_messagebox.h:
+jni/./SDL/include/SDL_messagebox.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_power.h:
+jni/./SDL/include/SDL_power.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_render.h:
+jni/./SDL/include/SDL_render.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_system.h:
+jni/./SDL/include/SDL_system.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_timer.h:
+jni/./SDL/include/SDL_timer.h:
 
-/bitrise/src/SDLActivity/jni/./SDL/include/SDL_version.h:
+jni/./SDL/include/SDL_version.h:
