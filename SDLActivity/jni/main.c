@@ -14,93 +14,85 @@
 
 #include "SDL.h"
 
-typedef struct Sprite {
-	SDL_Texture* texture;
-	Uint16 w;
-	Uint16 h;
-} Sprite;
- 
-/* Adapted from SDL's testspriteminimal.c */
-Sprite LoadSprite(const char* file, SDL_Renderer* renderer)
-{
-	Sprite result;
-	result.texture = NULL;
-	result.w = 0;
-	result.h = 0;
-	 
-	SDL_Surface* temp;
- 
-	/* Load the sprite image */
-	temp = SDL_LoadBMP(file);
-	if (temp == NULL)
-	{
-		fprintf(stderr, "Couldn't load %s: %s\n", file, SDL_GetError());
-		return result;
+// Using Bresenham's Algorithm
+void drawCircle(int radius, int centerX, int centerY, SDL_Renderer *renderer) {
+	int x = 0;
+	int y = radius;
+	int m = 5 - 4 * radius;
+	while(x <= y) {
+		SDL_RenderDrawPoint(renderer, x + centerX, y + centerY);
+		SDL_RenderDrawPoint(renderer, y + centerX, x + centerY);
+
+		SDL_RenderDrawPoint(renderer, -x + centerX, y + centerY);
+		SDL_RenderDrawPoint(renderer, -y + centerX, x + centerY);
+
+		SDL_RenderDrawPoint(renderer, x + centerX, -y + centerY);
+		SDL_RenderDrawPoint(renderer, y + centerX, -x + centerY );
+
+		SDL_RenderDrawPoint(renderer, -x + centerX, -y + centerY);
+		SDL_RenderDrawPoint(renderer, -y + centerX, -x + centerY);
+		if(m > 0) {
+			y = y - 1;
+			m = m - 8 * y;
+		}
+		x += 1;
+		m = m + 8 * x + 4;
 	}
-	result.w = temp->w;
-	result.h = temp->h;
- 
-	/* Create texture from the image */
-	result.texture = SDL_CreateTextureFromSurface(renderer, temp);
-	if (!result.texture) {
-		fprintf(stderr, "Couldn't create texture: %s\n", SDL_GetError());
-		SDL_FreeSurface(temp);
-		return result;
-	}
-	SDL_FreeSurface(temp);
- 
-	return result;
 }
- 
-void draw(SDL_Window* window, SDL_Renderer* renderer, const Sprite sprite)
-{
-	int w, h;
-	SDL_GetWindowSize(window, &w, &h);
-	SDL_Rect destRect = {w/2 - sprite.w/2, h/2 - sprite.h/2, sprite.w, sprite.h};
-	/* Blit the sprite onto the screen */
-	SDL_RenderCopy(renderer, sprite.texture, NULL, &destRect);
-}
-SDL_Rect r;
- 
- 
+
+
 int main(int argc, char *argv[])
 {
-	SDL_Window *window;
-	SDL_Renderer *renderer;
- 
-	if(SDL_CreateWindowAndRenderer(0, 0, 0, &window, &renderer) < 0)
-		exit(2);
- 
-	Sprite sprite = LoadSprite("image.bmp", renderer);
-	if(sprite.texture == NULL)
-		exit(2);
- 
-	/* Main render loop */
-	Uint8 done = 0;
-	SDL_Event event;
-	while(!done)
-	{
-		/* Check for events */
-		while(SDL_PollEvent(&event))
+    SDL_Window *window;
+    SDL_Renderer *renderer;
+	
+	//SDL_Rect *rectangle;
+	int w, h;
+
+    if(SDL_CreateWindowAndRenderer(0, 0, 0, &window, &renderer) < 0)
+        exit(2);
+
+	SDL_GetWindowSize(window, &w, &h);
+    /* Main render loop */
+    Uint8 done = 0;
+    SDL_Event event;
+
+	int rectX=w/2, rectY=h/2, rectWidth=160;
+    while(!done)
 		{
-			if(event.type == SDL_QUIT || event.type == SDL_KEYDOWN || event.type == SDL_FINGERDOWN)
-			{
-				done = 1;
-			}
-		}
-		 
-		 
-		/* Draw a gray background */
+        /* Check for events */
+        while(SDL_PollEvent(&event))
+		{
+            if(event.type == SDL_FINGERMOTION || event.type == SDL_FINGERDOWN)
+			{	
+				rectX = event.tfinger.x * w - 80;
+				rectY = event.tfinger.y * h - 80;
+				__android_log_print(2, "EVENT", "pos : %f - %f",  event.tfinger.x * w, event.tfinger.y * h );
+				__android_log_print(2, "EVENT", "pos : %d - %d",  w , h);
+            }
+        }
+
+		/* Draw background */
+
 		SDL_SetRenderDrawColor(renderer, 0xA0, 0xA0, 0xA0, 0xFF);
 		SDL_RenderClear(renderer);
-		 
-		draw(window, renderer, sprite);
-	 
+
+		/*create rectangle*/
+		SDL_Rect rectangle = (SDL_Rect){rectX, rectY, rectWidth, rectWidth};
+		rectangle.x = rectX;
+		rectangle.y = rectY;
+
+		/*render rectangle*/
+		SDL_SetRenderDrawColor(renderer, 0xFF, 0xFF, 0xFF, 0xFF);
+		// SDL_RenderFillRect(renderer, &rectangle);
+		drawCircle(60, w/2, h/2, renderer);
+
 		/* Update the screen! */
 		SDL_RenderPresent(renderer);
-		 
-		SDL_Delay(10);
-	}
- 
-	exit(0);
+
+		// SDL_Delay(10);
+    }
+
+    exit(0);
 }
+
